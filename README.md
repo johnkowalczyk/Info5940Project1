@@ -12,15 +12,16 @@ Before starting, ensure you have the following installed on your system:
 
 - [Docker](https://www.docker.com/get-started) (Ensure Docker Desktop is running)  
 - [VS Code](https://code.visualstudio.com/)  
+- Python 3.11
 - [VS Code Remote - Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)  
 - [Git](https://git-scm.com/)  
 - OpenAI API Key  
 
 ---
 
-## 🚀 Setup Guide  
+## Setup Guide  
 
-### 1️⃣ Clone the Repository  
+### 1️: Clone the Repository  
 
 Open a terminal and run:  
 
