@@ -46,14 +46,13 @@ Set the API Key in `.env` (Recommended)
    OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
    TZ=America/New_York
    ```
-
-3. Restart the container:  
-
-   ```bash
-   docker-compose up --build
-   ```
-
-Now, after built, go to the localhost port 8501: 
+### Run the program:
+1. Open the terminal
+2. Start the container:  
+```bash
+docker-compose up --build
+```
+3. Now, after built, go to the localhost port 8501: 
 ```bash
 http://0.0.0.0:8501/
 ```
