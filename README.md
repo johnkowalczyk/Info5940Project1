@@ -27,24 +27,10 @@ Open a terminal and run:
 
 ```bash
 git clone https://github.com/johnkowalczyk/Info5940Project1.git
-cd INFO-5940
+cd Info5940Project1
 ```
 
----
-### 2️. Open in VS Code with Docker  
-
-1. Open **VS Code**, navigate to the `INFO-5940` folder.  
-2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and search for:  
-   ```
-   Remote-Containers: Reopen in Container
-   ```
-3. Select this option. VS Code will build and open the project inside the container.  
-
-**Note:** If you don’t see this option, ensure that the **Remote - Containers** extension is installed.  
-
----
-
-### 3️. Configure OpenAI API Key  
+### 2. Configure OpenAI API Key  
 Set the API Key in `.env` (Recommended)  
 
 1. Inside the project folder, create a `.env` file:  
