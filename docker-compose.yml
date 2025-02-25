@@ -1,6 +1,6 @@
 services:
   devcontainer:
-    container_name: info-5940-devcontainer
+    container_name: info-5940-p1
     build:
       dockerfile: Dockerfile
       target: devcontainer
