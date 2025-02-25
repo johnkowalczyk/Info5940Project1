@@ -66,6 +66,9 @@ Set the API Key in `.env` (Recommended)
    docker-compose up --build
    ```
 
-Now, after built, go to the localhost port 8501: http://0.0.0.0:8501/
+Now, after built, go to the localhost port 8501: 
+```bash
+http://0.0.0.0:8501/
+```
 ---
 
