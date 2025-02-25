@@ -45,7 +45,7 @@ OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
 TZ=America/New_York
 ```
 ### 3. Run the program:
-1. Open the terminal
+1. In the Info5940Project1 Folder
 2. Start the container:  
 ```bash
 docker-compose up --build
