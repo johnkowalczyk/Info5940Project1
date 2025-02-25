@@ -21,7 +21,6 @@ COPY ./pyproject.toml ./poetry.lock* ./
 RUN poetry install --no-dev --no-interaction --no-ansi --no-root -vv \
     && rm -rf /root/.cache/pypoetry
 
-# Dev Container
 FROM base as devcontainer
 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-$(uname -m).zip" -o "awscliv2.zip" \
@@ -35,4 +34,6 @@ RUN poetry install --all-extras --no-interaction --no-ansi --no-root -vv \
 
 WORKDIR /workspace
 
-CMD ["tail", "-f", "/dev/null"]
+EXPOSE 8501
+
+CMD ["streamlit", "run", "/workspace/rag_chatbot.py", "--server.address=0.0.0.0"]
