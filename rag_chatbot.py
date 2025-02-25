@@ -22,8 +22,6 @@ if "messages" not in st.session_state:
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
-uploaded_files = None #helps for no context LLM
-
 if uploaded_files:
     for uploaded_file in uploaded_files:
         file_type = uploaded_file.name.split('.')[-1].lower()
