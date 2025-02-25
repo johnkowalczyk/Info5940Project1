@@ -70,6 +70,10 @@ langchain-community = "^0.2.15"
 faiss-cpu = "1.10.0"
 ```
 2. Allowed the program to run on port 8501, by adding code in the Dockerfile to expose the port, and in docker-compose.yml to include the port. 
+3. Has the Dockerfile run rag_chatbot.py on start of the devcontainer. 
+```bash
+CMD ["streamlit", "run", "/workspace/rag_chatbot.py", "--server.address=0.0.0.0"]
+```
 
 
 ### Feature Explanation
