@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 name = "INFO 5940"
 version = "1.0.0"
 description = ""
-authors = ["Ayham Boucher <private>"]
+authors = ["John Kowalczyk <private>"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
