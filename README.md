@@ -1,12 +1,12 @@
 ---
 
-# 📌 INFO-5940
+# INFO-5940
 
-Welcome to the John Kowalczyk Project 1 repository! This guide will help you set up the development environment using **Docker** in **VS Code**, configure the **OpenAI API key**, manage Git branches, and run Jupyter notebooks for assignments.  
+Welcome to the John Kowalczyk Project 1 repository! This guide will help you set up the development environment using **Docker** in **VS Code**, configure the **OpenAI API key**.
 
 ---
 
-## 🛠️ Prerequisites  
+## Prerequisites  
 
 Before starting, ensure you have the following installed on your system:  
 
@@ -31,7 +31,7 @@ cd INFO-5940
 ```
 
 ---
-### 2️⃣ Open in VS Code with Docker  
+### 2️. Open in VS Code with Docker  
 
 1. Open **VS Code**, navigate to the `INFO-5940` folder.  
 2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and search for:  
@@ -40,11 +40,11 @@ cd INFO-5940
    ```
 3. Select this option. VS Code will build and open the project inside the container.  
 
-📌 **Note:** If you don’t see this option, ensure that the **Remote - Containers** extension is installed.  
+**Note:** If you don’t see this option, ensure that the **Remote - Containers** extension is installed.  
 
 ---
 
-### 3️⃣ Configure OpenAI API Key  
+### 3️. Configure OpenAI API Key  
 Set the API Key in `.env` (Recommended)  
 
 1. Inside the project folder, create a `.env` file:  
@@ -73,3 +73,14 @@ http://0.0.0.0:8501/
 ```
 ---
 
+Modifications to Docker and Devcontainer:
+1. Added the following libraries to help with the RAG application with Langchain FAISS
+```bash
+langchain = "^0.2.15"
+langchain_core = "^0.2.15"
+langchain-openai = "^0.1.23"
+PyPdf2 = "^3.0.1"
+streamlit = "^1.0"
+langchain-community = "^0.2.15"
+faiss-cpu = "1.10.0"
+```
