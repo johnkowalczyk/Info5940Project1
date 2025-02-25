@@ -44,7 +44,7 @@ OPENAI_API_KEY=your-api-key-here
 OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
 TZ=America/New_York
 ```
-### Run the program:
+### 3. Run the program:
 1. Open the terminal
 2. Start the container:  
 ```bash
