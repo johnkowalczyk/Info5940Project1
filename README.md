@@ -25,12 +25,11 @@ Before starting, ensure you have the following installed on your system:
 Open a terminal and run:  
 
 ```bash
-git clone https://github.com/AyhamB/INFO-5940.git
+git clone https://github.com/johnkowalczyk/Info5940Project1.git
 cd INFO-5940
 ```
 
 ---
-
 ### 2️⃣ Open in VS Code with Docker  
 
 1. Open **VS Code**, navigate to the `INFO-5940` folder.  
@@ -45,8 +44,7 @@ cd INFO-5940
 ---
 
 ### 3️⃣ Configure OpenAI API Key  
-
-#### ➤ Option 1: Set the API Key in `.env` (Recommended)  
+Set the API Key in `.env` (Recommended)  
 
 1. Inside the project folder, create a `.env` file:  
 
@@ -62,34 +60,12 @@ cd INFO-5940
    TZ=America/New_York
    ```
 
-3. Modify `docker-compose.yml` to include this `.env` file:  
-
-   ```yaml
-   version: '3.8'
-   services:
-     devcontainer:
-       container_name: info-5940-devcontainer
-       build:
-         dockerfile: Dockerfile
-         target: devcontainer
-       environment:
-         - OPENAI_API_KEY=${OPENAI_API_KEY}
-         - OPENAI_BASE_URL=${OPENAI_BASE_URL}
-         - TZ=${TZ}
-       volumes:
-         - '$HOME/.aws:/root/.aws'
-         - '.:/workspace'
-       env_file:
-         - .env
-   ```
-
-4. Restart the container:  
+3. Restart the container:  
 
    ```bash
    docker-compose up --build
    ```
 
-Now, your API key will be automatically loaded inside the container.  
-
+Now, after built, go to the localhost port 8501: http://0.0.0.0:8501/
 ---
 
