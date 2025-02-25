@@ -35,17 +35,17 @@ Set the API Key in `.env` (Recommended)
 
 1. Inside the project folder, create a `.env` file:  
 
-   ```bash
-   touch .env
-   ```
+```bash
+touch .env
+```
 
 2. Add your API key and base URL:  
 
-   ```plaintext
-   OPENAI_API_KEY=your-api-key-here
-   OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
-   TZ=America/New_York
-   ```
+```plaintext
+OPENAI_API_KEY=your-api-key-here
+OPENAI_BASE_URL=https://api.ai.it.cornell.edu/
+TZ=America/New_York
+```
 ### Run the program:
 1. Open the terminal
 2. Start the container:  
